@@ -1,1 +1,1 @@
-# Wizard-s_Card
+# Magic_Card_War
