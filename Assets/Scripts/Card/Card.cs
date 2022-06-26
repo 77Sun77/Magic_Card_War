@@ -155,13 +155,13 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
     {
         if (GO.tag == "Card" && isDrag)
         {
-            Card card = GO.GetComponent<Card>();
-            if (card.kind == kind && card.rank == rank)
-            {
-                float distance = 1000;
-                foreach (GameObject go in triggerCard)
+            float distance = 1000;
+             foreach (GameObject go in triggerCard)
+             {
+                if(go != null)
                 {
-                    if(go != null)
+                    Card card = go.GetComponent<Card>();
+                    if (card.kind == kind && card.rank == rank)
                     {
                         if (Vector2.Distance(go.transform.position, transform.position) < distance)
                         {
@@ -170,16 +170,18 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
                                 merge.transform.Find("Blind").gameObject.SetActive(true);
                             }
                             distance = Vector2.Distance(go.transform.position, transform.position);
-                            
+
                             merge = go.gameObject;
                             merge.transform.Find("Blind").gameObject.SetActive(false);
                         }
+                        isMerge = true;
+                        nextCard = kind + " " + (rank + 1);
                     }
                     
-                }
-                isMerge = true;
-                nextCard = kind + " " + (rank + 1);
+                }                    
             }
+            
+            
 
         }
     }

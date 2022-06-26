@@ -15,6 +15,8 @@ public class SpawnManager : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             CardPrefab.Add((GameObject)Resources.Load("Prefabs/Card/Fire/Fire " + (i + 1)));
+            CardPrefab.Add((GameObject)Resources.Load("Prefabs/Card/Water/Water " + (i + 1)));
+            CardPrefab.Add((GameObject)Resources.Load("Prefabs/Card/Ground/Ground " + (i + 1)));
         }
     }
 
@@ -32,7 +34,8 @@ public class SpawnManager : MonoBehaviour
     {
         GameObject none = Instantiate(None, LayoutGroup);
         None_List.Add(none);
-        GameObject card = Instantiate(CardPrefab[0], CardList);
+        int random = Random.Range(0, 3);
+        GameObject card = Instantiate(CardPrefab[random], CardList);
         card.transform.localPosition = new Vector2(-1500, -360f); 
         card.GetComponent<Card>().Setting(none.transform, true);
         foreach (GameObject GO in Card_List) GO.GetComponent<Card>().Setting(true);
