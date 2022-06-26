@@ -271,6 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0aae1a85e47cd44865230c715e9338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Card_Skill: {fileID: 1589876234053730189, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
   target: {fileID: 0}
   isMove: 0
   isDrag: 0

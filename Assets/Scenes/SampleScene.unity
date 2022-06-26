@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 278666589}
   - component: {fileID: 278666588}
   - component: {fileID: 278666590}
+  - component: {fileID: 278666591}
   m_Layer: 0
   m_Name: MagicCircle
   m_TagString: Untagged
@@ -181,7 +182,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 75db30822e04b1d49afe6e4152d7a4bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -228,6 +229,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &278666591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278666587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e290c1c899e7da4684030738199a42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs: []
 --- !u!1 &293269373
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnManager: {fileID: 380433927}
+  magicCircle: {fileID: 278666591}
   Blind_Parent: {fileID: 1815214918}
   Blind:
   - {fileID: 697783552}

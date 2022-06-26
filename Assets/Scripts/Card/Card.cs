@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
+    public GameObject Card_Skill;
+
     public void Setting(bool isMove)
     {
         this.isMove = isMove;
@@ -104,7 +106,7 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
         {
             if (transform.localPosition.y >= 30)
             {
-
+                GameManager.instance.magicCircle.OnMagicCicle(Card_Skill);
                 Card_Destroy();
             }
             else if (isMerge && rank < 3)

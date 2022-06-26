@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Script")]
     public SpawnManager SpawnManager;
+    public MagicCircle magicCircle;
 
     [Header("UI")]
     public GameObject Blind_Parent;

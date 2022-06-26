@@ -386,6 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0aae1a85e47cd44865230c715e9338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Card_Skill: {fileID: 3142061154964826215, guid: b4fe2dff05d18544186674fa98f12ed5, type: 3}
   target: {fileID: 0}
   isMove: 0
   isDrag: 0
