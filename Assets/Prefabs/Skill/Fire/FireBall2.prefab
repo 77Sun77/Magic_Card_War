@@ -173,6 +173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireBall
       objectReference: {fileID: 0}
+    - target: {fileID: 1589876234053730191, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: -1.5707963
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1589876234053730178, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
     - {fileID: 1589876234053730177, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
@@ -238,6 +242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireBall
       objectReference: {fileID: 0}
+    - target: {fileID: 1589876234053730191, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: -1.5707963
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1589876232869401018, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
     - {fileID: 1589876234053730178, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
@@ -302,6 +310,10 @@ PrefabInstance:
     - target: {fileID: 1589876234053730189, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
       propertyPath: m_Name
       value: FireBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1589876234053730191, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: -1.5707963
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1589876234053730178, guid: ea76a0c3d2361814ea944c6c8e41bb23, type: 3}
