@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 1561982592}
   - component: {fileID: 1561982591}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Monster (EX
   m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
