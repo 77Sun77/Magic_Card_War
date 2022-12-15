@@ -192,7 +192,6 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
     {
         if (GO.tag == "Card" && GO.gameObject == merge)
         {
-            print("GG");
             triggerCard.Remove(GO.gameObject);
             isMerge = false;
             nextCard = "";

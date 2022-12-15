@@ -77,6 +77,19 @@ public class MagicCircle : MonoBehaviour
         {
             if (prefabs[0].name == "FireBall") prefab.GetComponent<Projectile>().Setting(2, 3.5f);
             if (prefabs[0].name == "FireBall2") prefab.GetComponent<Projectile>().Setting(3, 5f);
+            
+        }
+        else
+        {
+            if (prefabs[0].name == "FireBall3")
+            {
+                if (GameManager.instance.monsters.Length > 0)
+                {
+                    Vector2 vec = GameManager.instance.monsters[0].transform.position;
+                    vec.y = 8;
+                    prefab.transform.position = vec;
+                }
+            }
         }
     }
 }

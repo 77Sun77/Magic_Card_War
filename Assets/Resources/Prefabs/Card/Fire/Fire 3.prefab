@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0aae1a85e47cd44865230c715e9338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Card_Skill: {fileID: 0}
+  Card_Skill: {fileID: 6935912307608880287, guid: 9b8f537387e0f1948a81c7866294ee58, type: 3}
   target: {fileID: 0}
   isMove: 0
   isDrag: 0
