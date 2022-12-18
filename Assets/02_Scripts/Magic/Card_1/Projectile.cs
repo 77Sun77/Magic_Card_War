@@ -10,8 +10,10 @@ public class Projectile : MonoBehaviour // 구체와 관통형에만 적용
         this.speed = speed;
     }
 
-    public enum Kind { Sphere, Penetrate };
+    public enum Kind { Sphere, Penetrate, Extent }; // 구체, 관통, 폭발(범위)
     public Kind MagicKind;
+
+    public GameObject prefab;
 
     int damage;
     float speed;
@@ -31,9 +33,19 @@ public class Projectile : MonoBehaviour // 구체와 관통형에만 적용
         if(GO.tag == "Monster")
         {
             Monster m = GO.GetComponent<Monster>();
-            m.Take_Damage(damage);
+            HitAnim go = Instantiate(prefab, transform.position, Quaternion.identity).GetComponent<HitAnim>();
             if(MagicKind == Kind.Sphere)
             {
+                Destroy(gameObject);
+                m.Take_Damage(damage);
+            }
+            else if(MagicKind == Kind.Penetrate)
+            {
+
+            }
+            else
+            {
+                go.Set_Extent(damage);
                 Destroy(gameObject);
             }
         }

@@ -7,7 +7,7 @@ public class Monster : MonoBehaviour
     public enum Kind { Normal };
     public Kind MonsterKind;
 
-    int hp, damage;
+    float hp, damage;
     float speed;
 
 
@@ -32,7 +32,7 @@ public class Monster : MonoBehaviour
         this.speed = speed;
     }
 
-    public void Take_Damage(int damage)
+    public void Take_Damage(float damage)
     {
         hp -= damage;
         if (hp <= 0)

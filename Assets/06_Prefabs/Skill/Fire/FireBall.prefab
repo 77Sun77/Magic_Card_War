@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MagicKind: 0
+  prefab: {fileID: 9054870708678013662, guid: 445d8b3d3f38932488b6841eac26ec22, type: 3}
 --- !u!1001 &5143093566233091282
 PrefabInstance:
   m_ObjectHideFlags: 0
